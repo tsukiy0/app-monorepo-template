@@ -7,7 +7,7 @@ services:
     volumes:
       - ../..:/app
     working_dir: /app
-    command: bash build.sh
+    command: bash ./tasks/ci/build
   deploy:
     build:
       context: .
