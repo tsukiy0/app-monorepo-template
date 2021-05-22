@@ -20,5 +20,6 @@ module.exports = {
         trailingComma: "all",
       },
     ],
+    "@typescript-eslint/require-await": "off"
   },
 };
