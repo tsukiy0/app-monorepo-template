@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
-echo "build!"
-
 yarn install --silent
+yarn lint
+yarn test
+yarn build

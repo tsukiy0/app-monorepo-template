@@ -2,4 +2,7 @@
 
 set -euo pipefail
 
-echo "deploy!"
+pushd packages/deployment
+# yarn deploy:root
+# yarn deploy:app
+popd
