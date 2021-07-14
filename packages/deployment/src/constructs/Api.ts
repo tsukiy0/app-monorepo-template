@@ -36,6 +36,7 @@ export class Api extends Construct {
       memorySize: 128,
       environment: {
         OWM_API_KEY: props.owmApiKey,
+        TEST: "hello",
       },
     });
 
