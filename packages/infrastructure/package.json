@@ -13,11 +13,6 @@
     "test:integration:local": "jest --config jest.config.integration.js -t OwmForecastService"
   },
   "dependencies": {
-    "@app/core": "*",
-    "pino": "^6.11.3",
-    "pure-uuid": "^1.6.2"
-  },
-  "devDependencies": {
-    "@types/pino": "^6.3.8"
+    "@app/core": "*"
   }
 }
