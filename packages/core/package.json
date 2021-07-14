@@ -11,6 +11,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@tsukiy0/extensions-core": "^0.1.0-alpha.8"
+    "@tsukiy0/extensions-core": "0.1.0-alpha.8"
   }
 }
