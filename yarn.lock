@@ -1688,40 +1688,40 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/recommended/-/recommended-1.0.1.tgz#7619bad397e06ead1c5182926c944e0ca6177f52"
   integrity sha512-2xN+iGTbPBEzGSnVp/Hd64vKJCJWxsi9gfs88x4PPMyEjHJoA3o5BY9r5OLPHIZU2pAQxkSAsJFqn6itClP8mQ==
 
-"@tsukiy0/extensions-aws-cdk@^0.1.0-alpha.11":
-  version "0.1.0-alpha.11"
-  resolved "https://registry.yarnpkg.com/@tsukiy0/extensions-aws-cdk/-/extensions-aws-cdk-0.1.0-alpha.11.tgz#0ccbdeaf1a8529fed4a705c4596cdf79f48321b0"
-  integrity sha512-b6k0c4KnuDELiBaBfxtZhQCx3dts+T2sMte/Qzni1/RRAz6P1eDkBoUe5BmR8xifeP7cQ2vmLN2ItZWXRtkruQ==
+"@tsukiy0/extensions-aws-cdk@^0.1.0-alpha.13":
+  version "0.1.0-alpha.13"
+  resolved "https://registry.yarnpkg.com/@tsukiy0/extensions-aws-cdk/-/extensions-aws-cdk-0.1.0-alpha.13.tgz#bcc0baa890284341d87c4860d04893dc224eca41"
+  integrity sha512-BsLBiSqmxcQj92hgweSzU0AgKvNkCqIOyKXpHVW3UPDQhV/gMbG1EaWEqwVTWoLKqdPvWIRDhjFdk4r7BO08mw==
   dependencies:
     aws-cdk-lib "2.0.0-rc.11"
     constructs "10.0.5"
 
-"@tsukiy0/extensions-core@0.1.0-alpha.11", "@tsukiy0/extensions-core@^0.1.0-alpha.11":
-  version "0.1.0-alpha.11"
-  resolved "https://registry.yarnpkg.com/@tsukiy0/extensions-core/-/extensions-core-0.1.0-alpha.11.tgz#47f527016c5f2f291d6c79009db4ae23e45e0533"
-  integrity sha512-FSSOJhw6AYg+30PIXB+fpteWtWo5+jpbDn+gkozASdsE/z81lLvN2r5WmAo2CoACetGmDJV+YE3pIBIDzkcfhw==
+"@tsukiy0/extensions-core@0.1.0-alpha.13", "@tsukiy0/extensions-core@^0.1.0-alpha.13":
+  version "0.1.0-alpha.13"
+  resolved "https://registry.yarnpkg.com/@tsukiy0/extensions-core/-/extensions-core-0.1.0-alpha.13.tgz#55646ee90ae27a531993ec42523e48bd2728c789"
+  integrity sha512-+/0m20bPR7WIkW+QuLWB/Br64v4/STd/Oo+E5x5V9vxnu70SyJX3WRbPTWVFCuWaefkqJqYr/2+VblOowXZKWQ==
   dependencies:
     pure-uuid "1.6.2"
     runtypes "6.3.1"
 
-"@tsukiy0/extensions-express@0.1.0-alpha.11":
-  version "0.1.0-alpha.11"
-  resolved "https://registry.yarnpkg.com/@tsukiy0/extensions-express/-/extensions-express-0.1.0-alpha.11.tgz#e8f176e63ba83a954f805426ba72a48f58f8dc9a"
-  integrity sha512-3Eyk849yHdvqZDioYh9UInd53oK+Ryy6bBDcn/oVIZ85DYNy+YRzfW62HhdiChlpF2Hjq5V0K45w66nF4SOoFg==
+"@tsukiy0/extensions-express@0.1.0-alpha.13":
+  version "0.1.0-alpha.13"
+  resolved "https://registry.yarnpkg.com/@tsukiy0/extensions-express/-/extensions-express-0.1.0-alpha.13.tgz#8cf8bf3eb746e6e2254fbfb440d21ddf1d965b20"
+  integrity sha512-fShmUpcl2mK4l440Ir8mUYK+Obt5/zCKGc+jbPioamx4f6hCGEIKTvvABqDiG3A280gZXMiTye1GbeuVb2sRLw==
   dependencies:
-    "@tsukiy0/extensions-core" "^0.1.0-alpha.11"
-    "@tsukiy0/extensions-logging-winston" "^0.1.0-alpha.11"
+    "@tsukiy0/extensions-core" "^0.1.0-alpha.13"
+    "@tsukiy0/extensions-logging-winston" "^0.1.0-alpha.13"
     body-parser "1.19.0"
     cors "2.8.5"
     express "4.17.1"
     runtypes "6.3.1"
 
-"@tsukiy0/extensions-logging-winston@^0.1.0-alpha.11":
-  version "0.1.0-alpha.11"
-  resolved "https://registry.yarnpkg.com/@tsukiy0/extensions-logging-winston/-/extensions-logging-winston-0.1.0-alpha.11.tgz#a73694e9ffdab97f97aa3d2fb6fa68b5fe386431"
-  integrity sha512-balYapLrOVpM0VHo6MKH/dxcInt04wFXaWxNiPLwbXftoF7xCATWBTXJHQmOEraQGmPsGVtBbyGJZKr6LrRV+g==
+"@tsukiy0/extensions-logging-winston@^0.1.0-alpha.13":
+  version "0.1.0-alpha.13"
+  resolved "https://registry.yarnpkg.com/@tsukiy0/extensions-logging-winston/-/extensions-logging-winston-0.1.0-alpha.13.tgz#fda4440ef5f69c4c0ab8b473db00168f41ae2705"
+  integrity sha512-tV1met7Fhv6xVDAL2ab2bl5chYPUgTzv0VDNgmHE+HXpXIE2JsGqB7aDQ1Fv4lhbgggq21DkbXaCZPjrOJ49eQ==
   dependencies:
-    "@tsukiy0/extensions-core" "^0.1.0-alpha.11"
+    "@tsukiy0/extensions-core" "^0.1.0-alpha.13"
     logform "2.2.0"
     winston "3.3.3"
 
