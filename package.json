@@ -24,6 +24,7 @@
   "scripts": {
     "clean": "lerna run clean",
     "build": "lerna run build",
+    "publish": "lerna run publish",
     "test": "lerna run test",
     "lint": "eslint packages --ext .ts,.tsx"
   }

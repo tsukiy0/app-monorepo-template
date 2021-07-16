@@ -13,6 +13,11 @@ jobs:
           docker-compose -f tasks/ci/docker-compose.yml build build
           docker-compose -f tasks/ci/docker-compose.yml run build
           docker-compose -f tasks/ci/docker-compose.yml down
+      - name: publish
+        run: |
+          docker-compose -f tasks/ci/docker-compose.yml build publish
+          docker-compose -f tasks/ci/docker-compose.yml run publish
+          docker-compose -f tasks/ci/docker-compose.yml down
       # - name: dev_deploy
       #   env:
       #     Environment: dev
