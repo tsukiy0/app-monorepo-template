@@ -1,23 +1,20 @@
-import * as cdk from "@aws-cdk/core";
+import { App } from "aws-cdk-lib";
 import { AppStack } from "./stacks/AppStack";
-import { RootStack } from "./stacks/RootStack";
+import { ExternalStack } from "./stacks/ExternalStack";
 
-const app = new cdk.App();
+const app = new App();
 
-new RootStack(app, "Root", {
+new ExternalStack(app, "External", {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT!,
     region: "us-east-1",
   },
   alertEmail: process.env.ALERT_EMAIL!,
-  domainName: process.env.DOMAIN_NAME!,
 });
 
-new AppStack(app, "UsEast1App", {
+new AppStack(app, "AppUsEast1", {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT!,
     region: "us-east-1",
   },
-  domainName: process.env.DOMAIN_NAME!,
-  owmApiKey: process.env.OWM_API_KEY!,
 });

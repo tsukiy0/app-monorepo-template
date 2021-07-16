@@ -1,25 +1,11 @@
-import { Construct, Stack, StackProps } from "@aws-cdk/core";
+import { Stack, StackProps } from "aws-cdk-lib";
+import { Construct } from "constructs";
 import { Api } from "../constructs/Api";
-import { Dns } from "../constructs/Dns";
 
 export class AppStack extends Stack {
-  public constructor(
-    scope: Construct,
-    id: string,
-    props: StackProps & {
-      domainName: string;
-      owmApiKey: string;
-    },
-  ) {
+  public constructor(scope: Construct, id: string, props: StackProps) {
     super(scope, id, props);
 
-    const dns = new Dns(this, "Dns", {
-      domainName: props.domainName,
-    });
-
-    new Api(this, "Api", {
-      dns,
-      owmApiKey: props.owmApiKey,
-    });
+    new Api(this, "Api");
   }
 }

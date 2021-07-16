@@ -9,19 +9,17 @@
     "clean": "rimraf dist",
     "build": "tsc -p tsconfig.build.json",
     "predeploy:root": "cdk bootstrap",
-    "deploy:root": "cdk deploy --require-approval never Root",
+    "deploy:root": "cdk deploy --require-approval never External",
     "deploy:app": "cdk deploy --require-approval never --all"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "1.114.0",
-    "@aws-cdk/aws-certificatemanager": "1.114.0",
-    "@aws-cdk/aws-route53": "1.114.0",
-    "@aws-cdk/aws-route53-targets": "1.114.0",
-    "@aws-cdk/core": "1.114.0",
-    "@tsukiy0/aws-cdk-toolbox": "1.6.0-alpha.1"
+    "@tsukiy0/extensions-aws-cdk": "^0.1.0-alpha.11",
+    "@tsukiy0/extensions-core": "^0.1.0-alpha.11",
+    "aws-cdk-lib": "^2.0.0-rc.11",
+    "constructs": "^10.0.5"
   },
   "devDependencies": {
     "@types/node": "^16.3.2",
-    "aws-cdk": "^1.114.0"
+    "aws-cdk": "^2.0.0-rc.11"
   }
 }
