@@ -26,6 +26,7 @@
     "build": "lerna run build",
     "publish": "lerna run publish",
     "test": "lerna run test",
+    "test:integration": "lerna run test:integration",
     "lint": "eslint packages --ext .ts,.tsx"
   }
 }
