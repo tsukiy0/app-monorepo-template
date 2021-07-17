@@ -2,4 +2,5 @@
 
 set -euo pipefail
 
+yarn clean
 yarn run publish

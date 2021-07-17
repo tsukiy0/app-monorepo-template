@@ -13,7 +13,7 @@ jobs:
           docker-compose -f tasks/ci/docker-compose.yml build build
           docker-compose -f tasks/ci/docker-compose.yml run build
           docker-compose -f tasks/ci/docker-compose.yml down
-      - name: publish
+      - name: dev_publish
         run: |
           docker-compose -f tasks/ci/docker-compose.yml build publish
           docker-compose -f tasks/ci/docker-compose.yml run publish
@@ -37,6 +37,11 @@ jobs:
         run: |
           docker-compose -f tasks/ci/docker-compose.yml build integration
           docker-compose -f tasks/ci/docker-compose.yml run integration
+          docker-compose -f tasks/ci/docker-compose.yml down
+      - name: prod_publish
+        run: |
+          docker-compose -f tasks/ci/docker-compose.yml build publish
+          docker-compose -f tasks/ci/docker-compose.yml run publish
           docker-compose -f tasks/ci/docker-compose.yml down
       - name: prod_deploy
         env:
