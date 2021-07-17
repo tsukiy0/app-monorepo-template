@@ -3,6 +3,5 @@
 set -euo pipefail
 
 pushd packages/deployment
-# yarn deploy:root
-# yarn deploy:app
+yarn deploy
 popd

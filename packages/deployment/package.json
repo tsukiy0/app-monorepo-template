@@ -8,9 +8,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc -p tsconfig.build.json",
-    "predeploy:root": "cdk bootstrap",
-    "deploy:root": "cdk deploy --require-approval never External",
-    "deploy:app": "cdk deploy --require-approval never --all"
+    "predeploy": "cdk bootstrap && cdk deploy --require-approval never External",
+    "deploy": "cdk deploy --require-approval never --all"
   },
   "dependencies": {
     "@tsukiy0/extensions-aws-cdk": "^0.1.0-alpha.13",
