@@ -21,6 +21,7 @@ jobs:
       - name: dev_deploy
         env:
           Environment: dev
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
           AWS_ACCESS_KEY_ID: ${{ secrets.DEV_AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-1
@@ -31,6 +32,7 @@ jobs:
       - name: prod_deploy
         env:
           Environment: prod
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
           AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-1
