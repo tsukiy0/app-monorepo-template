@@ -26,6 +26,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc --noEmit",
+    "prepublish": "yarn clean",
     "publish": "esbuild src/index.ts --platform=node --bundle --target=node12 --sourcemap --minify --outfile=dist/index.js",
     "start": "ts-node -r tsconfig-paths/register src/local.ts"
   }

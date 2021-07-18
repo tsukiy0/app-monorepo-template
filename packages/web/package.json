@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "clean": "rimraf .next out",
     "dev": "next dev",
     "build": "tsc --noEmit",
+    "prepublish": "yarn clean",
     "publish": "next build && next export",
     "start": "next start"
   },
