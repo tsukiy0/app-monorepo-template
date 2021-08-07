@@ -1,6 +1,7 @@
 import express, { Application } from "express";
 import { SystemConfiguration } from "@tsukiy0/extensions-core";
 import {
+  CorrelationMiddleware,
   ErrorMiddleware,
   LoggerMiddleware,
   promisifyHandler,
@@ -13,7 +14,11 @@ export class App {
 
     const configuration = new SystemConfiguration();
 
-    const loggerMiddleware = new LoggerMiddleware("@app/api");
+    const correlationMiddleware = new CorrelationMiddleware();
+    const loggerMiddleware = new LoggerMiddleware(
+      "@app/api",
+      correlationMiddleware,
+    );
     const errorMiddleware = new ErrorMiddleware(loggerMiddleware);
     const publicRouter = new PublicRouter(configuration);
 
