@@ -5,9 +5,9 @@
   "scripts": {
     "clean": "rimraf .next out",
     "dev": "next dev",
-    "build": "tsc --noEmit",
-    "prepublish": "yarn clean",
-    "publish": "next build && next export",
+    "typecheck": "tsc --noEmit",
+    "prebuild:publish": "yarn clean",
+    "build:publish": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
