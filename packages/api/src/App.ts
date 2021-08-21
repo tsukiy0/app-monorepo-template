@@ -7,6 +7,7 @@ import {
   promisifyHandler,
 } from "@tsukiy0/extensions-express";
 import { PublicRouter } from "./routers/PublicRouter";
+import { ServicesMiddleware } from "./middlewares/ServicesMiddleware";
 
 export class App {
   static build = (): Application => {
@@ -19,10 +20,13 @@ export class App {
       "@app/api",
       correlationMiddleware,
     );
+    const servicesMiddleware = new ServicesMiddleware(correlationMiddleware);
     const errorMiddleware = new ErrorMiddleware(loggerMiddleware);
     const publicRouter = new PublicRouter(configuration);
 
+    app.use(correlationMiddleware.handler);
     app.use(loggerMiddleware.handler);
+    app.use(servicesMiddleware.handler);
 
     app.use(publicRouter.router);
 
