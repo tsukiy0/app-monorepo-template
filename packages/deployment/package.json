@@ -19,7 +19,7 @@
     "constructs": "10.0.5"
   },
   "devDependencies": {
-    "@types/node": "16.4.13",
+    "@types/node": "16.7.1",
     "aws-cdk": "2.0.0-rc.11"
   }
 }
