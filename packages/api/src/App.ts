@@ -24,7 +24,7 @@ export class App {
     app.use(loggerMiddleware.handler);
     app.use(servicesMiddleware.handler);
 
-    app.use(publicRouter.router);
+    app.use(publicRouter.router());
 
     app.use(errorMiddleware.handler);
 
