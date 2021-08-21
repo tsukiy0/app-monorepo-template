@@ -7,6 +7,8 @@ export class AppStack extends Stack {
   public constructor(scope: Construct, id: string, props: StackProps) {
     super(scope, id, props);
 
+    new External();
+
     new Api(this, "Api");
 
     new Web(this, "Web");
