@@ -29,6 +29,6 @@
     "deploy": "lerna run deploy",
     "test": "lerna run test",
     "test:integration": "lerna run test:integration",
-    "lint": "eslint packages --ext .ts,.tsx"
+    "lint": "NODE_OPTIONS=\"--max-old-space-size=4192\" eslint packages --ext .ts,.tsx"
   }
 }
