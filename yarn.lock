@@ -2,27 +2,27 @@
 # yarn lockfile v1
 
 
-"@aws-cdk/cfnspec@2.0.0-rc.11":
-  version "2.0.0-rc.11"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cfnspec/-/cfnspec-2.0.0-rc.11.tgz#0142e7ee763c94edd65adda545f2adbdc4d1623a"
-  integrity sha512-thRn1a6hEtIWSBahvp86LfB9Dht3nR78pLtdQsLcn3MsHjeAssL4XqCgG4spsr1H1xBQB9lFeKTKOFgnYAy7BQ==
+"@aws-cdk/cfnspec@2.0.0-rc.16":
+  version "2.0.0-rc.16"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cfnspec/-/cfnspec-2.0.0-rc.16.tgz#98d88397e74f03685f2692ce61e65fb23465e7ae"
+  integrity sha512-dYZaoqdVrpvAkXVEgPX4VeZJp1tCMB5PXqMZHr1/hlADvInJ2GGvmIaHvN6k+UuL6VrQvfDU+ypxXzQ0tFwjuw==
   dependencies:
     md5 "^2.3.0"
 
-"@aws-cdk/cloud-assembly-schema@2.0.0-rc.11":
-  version "2.0.0-rc.11"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-2.0.0-rc.11.tgz#c8fee839e1d49cc224bd9ec2f324894b1209ea5d"
-  integrity sha512-xugRIIbP7arVi4Z0Nz08AMl2+eW0gIDWr8eEYh+GN30uRoXrnF5+hB6HM9GMv6lgOVEGd8txYELjnqerQoTbWA==
+"@aws-cdk/cloud-assembly-schema@2.0.0-rc.16":
+  version "2.0.0-rc.16"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-2.0.0-rc.16.tgz#b3c465c418fb468550fedef7ef9d7c0f5a0145ba"
+  integrity sha512-1hX1r2pGS5DYQ5Xy+of4gQpnBfSuGgoOAW5FjxNUXv8s5e5q3bcgKeF+0/0jli8ry60DePOOuXOnenwWC9Incg==
   dependencies:
     jsonschema "^1.4.0"
     semver "^7.3.5"
 
-"@aws-cdk/cloudformation-diff@2.0.0-rc.11":
-  version "2.0.0-rc.11"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloudformation-diff/-/cloudformation-diff-2.0.0-rc.11.tgz#6396f9f0d5cb327ea7f6dbf977ebfd310352107d"
-  integrity sha512-NC3nVaXzryaL0a+sMdFOGGTMErKewEZHcjKqtprfj2kEOtU99jQVGuKJ0HKEl/iicdlUTlp2VJI9hgmJn51vOg==
+"@aws-cdk/cloudformation-diff@2.0.0-rc.16":
+  version "2.0.0-rc.16"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloudformation-diff/-/cloudformation-diff-2.0.0-rc.16.tgz#3d27a093a61302806da2a63a5e14db4ebf523e34"
+  integrity sha512-M5clGhpj56G820yRVtvktZEO5u3xVcbnT23kPbVEUFwZ1rX1ON+w4m6SnDMY/pE7jaKT3MOMCPVb8Sx/HoNHyg==
   dependencies:
-    "@aws-cdk/cfnspec" "2.0.0-rc.11"
+    "@aws-cdk/cfnspec" "2.0.0-rc.16"
     "@types/node" "^10.17.60"
     colors "^1.4.0"
     diff "^5.0.0"
@@ -30,18 +30,18 @@
     string-width "^4.2.2"
     table "^6.7.1"
 
-"@aws-cdk/cx-api@2.0.0-rc.11":
-  version "2.0.0-rc.11"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cx-api/-/cx-api-2.0.0-rc.11.tgz#a945f2b505927f746d0efd62220314168dec4b58"
-  integrity sha512-t7kKSKBXrWWk7oL7aKRshIhnewLurn6z/rsO+EAzICyHdqos28F+A+2ItYg61z7tv43Bjn4IXrx1/utiQ+aHWQ==
+"@aws-cdk/cx-api@2.0.0-rc.16":
+  version "2.0.0-rc.16"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cx-api/-/cx-api-2.0.0-rc.16.tgz#b7cd3dd49a4b617c2ab1b47ae6bd26a206793854"
+  integrity sha512-JE02iR0kxhCyZ8Rk5FwmkX5bdsUFboTOx+uHS0FmwQQ817q+HqujgHWazpfL1TKwI2/mPZxacsaI0IIe2w9T0w==
   dependencies:
-    "@aws-cdk/cloud-assembly-schema" "2.0.0-rc.11"
+    "@aws-cdk/cloud-assembly-schema" "2.0.0-rc.16"
     semver "^7.3.5"
 
-"@aws-cdk/region-info@2.0.0-rc.11":
-  version "2.0.0-rc.11"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/region-info/-/region-info-2.0.0-rc.11.tgz#f37d3f649c3267a3c042de6bd9d2c9b7e9b7003e"
-  integrity sha512-BHIxh6jhmb4NujwM/+FPdhv1ua7lbz0yyZEjy88WrijsasCTS8rP0vXFHT01XBms0K5isVsgGb+gzqQwmrJFfw==
+"@aws-cdk/region-info@2.0.0-rc.16":
+  version "2.0.0-rc.16"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/region-info/-/region-info-2.0.0-rc.16.tgz#9e7e58fda23ae81d72d4dff43b730b2681ad07da"
+  integrity sha512-jBe2vgm7mw8yakWxxwuryYrrChGyAccAW2eFhBU6/pJ2Qbd6pdkd7GqqM6F5niToUW5k5fmsdwE+EK9vIxtbGg==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
@@ -2589,19 +2589,19 @@ aws-cdk-lib@2.0.0-rc.16:
     table "^6.7.1"
     yaml "1.10.2"
 
-aws-cdk@2.0.0-rc.11:
-  version "2.0.0-rc.11"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.0.0-rc.11.tgz#a877c8d359ed0c07dd28d9bed4b81579e5d18e0a"
-  integrity sha512-DfS+XYaibHaRZRsvFIRLBHCBE7NC/IeT85YHrtjj2mhEf2Ba+J9XOLX080hPp38CrPuHQemLI+ox/S9aub4FZw==
+aws-cdk@2.0.0-rc.16:
+  version "2.0.0-rc.16"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.0.0-rc.16.tgz#1eef1b0b53632ef17e92b858df7e6c44e6900ff1"
+  integrity sha512-rzUd45ZIJs0vRfUvJQ4e2F2YKGMzvHfdqKBVInP8AFlEcDUyCXEwpjc4J0FbFT6LF0KyWwpLh7JwxhTcj3lROw==
   dependencies:
-    "@aws-cdk/cloud-assembly-schema" "2.0.0-rc.11"
-    "@aws-cdk/cloudformation-diff" "2.0.0-rc.11"
-    "@aws-cdk/cx-api" "2.0.0-rc.11"
-    "@aws-cdk/region-info" "2.0.0-rc.11"
+    "@aws-cdk/cloud-assembly-schema" "2.0.0-rc.16"
+    "@aws-cdk/cloudformation-diff" "2.0.0-rc.16"
+    "@aws-cdk/cx-api" "2.0.0-rc.16"
+    "@aws-cdk/region-info" "2.0.0-rc.16"
     archiver "^5.3.0"
     aws-sdk "^2.848.0"
     camelcase "^6.2.0"
-    cdk-assets "2.0.0-rc.11"
+    cdk-assets "2.0.0-rc.16"
     colors "^1.4.0"
     decamelize "^5.0.0"
     fs-extra "^9.1.0"
@@ -3061,16 +3061,17 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cdk-assets@2.0.0-rc.11:
-  version "2.0.0-rc.11"
-  resolved "https://registry.yarnpkg.com/cdk-assets/-/cdk-assets-2.0.0-rc.11.tgz#b73463341a357c87048ddea0f98c756bf8158bc9"
-  integrity sha512-UMLWMFNMQzQCoGyo10Q1q1Skd9E2rf8TBpAeSpK8m/72D1J7295n74prFWo/79J0bCTiBDLgvMYfvhzKMDtR/Q==
+cdk-assets@2.0.0-rc.16:
+  version "2.0.0-rc.16"
+  resolved "https://registry.yarnpkg.com/cdk-assets/-/cdk-assets-2.0.0-rc.16.tgz#1fa6afffce07acab48adc1e04e1246b6fe870252"
+  integrity sha512-9CGeImGOvDmgtvDAZp6YBUcCtrkXEH0sVxIqbLHCRlh3q32vQ22vPbyNJUsjQk0lXbqC9+El4nJ6XpFOUAp7Xw==
   dependencies:
-    "@aws-cdk/cloud-assembly-schema" "2.0.0-rc.11"
-    "@aws-cdk/cx-api" "2.0.0-rc.11"
+    "@aws-cdk/cloud-assembly-schema" "2.0.0-rc.16"
+    "@aws-cdk/cx-api" "2.0.0-rc.16"
     archiver "^5.3.0"
     aws-sdk "^2.848.0"
     glob "^7.1.7"
+    mime "^2.5.2"
     yargs "^16.2.0"
 
 chalk@2.4.2, chalk@^2.0.0:
@@ -6579,6 +6580,11 @@ mime@1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
+
+mime@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-2.5.2.tgz#6e3dc6cc2b9510643830e5f19d5cb753da5eeabe"
+  integrity sha512-tqkh47FzKeCPD2PUiPB6pkbMzsCasjxAfC62/Wap5qrUWcb+sFasXUC5I3gYM5iBM8v/Qpn4UK0x+j0iHyFPDg==
 
 mimic-fn@^2.1.0:
   version "2.1.0"

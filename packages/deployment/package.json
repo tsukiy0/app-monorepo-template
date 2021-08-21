@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "@types/node": "16.7.1",
-    "aws-cdk": "2.0.0-rc.11"
+    "aws-cdk": "2.0.0-rc.16"
   }
 }
