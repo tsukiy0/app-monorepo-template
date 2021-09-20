@@ -6,7 +6,7 @@ export class PublicRouter {
   router = (): Router => {
     const router = Router();
 
-    router.get(
+    router.post(
       "/v1/public/health",
       new ExpressJsonRuntime(
         "/v1/public/health",
