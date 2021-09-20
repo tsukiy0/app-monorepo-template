@@ -12,7 +12,7 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
-    "@tsukiy0/extensions-core": "0.1.0-alpha.21",
+    "@tsukiy0/extensions-core": "0.1.0-alpha.39",
     "runtypes": "6.4.1"
   }
 }

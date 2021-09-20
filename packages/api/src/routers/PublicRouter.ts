@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { promisifyHandler } from "@tsukiy0/extensions-express";
+import { ExpressJsonRuntime } from "@tsukiy0/extensions-express";
+import { Processor } from "../Processor";
 
 export class PublicRouter {
   router = (): Router => {
@@ -7,9 +8,14 @@ export class PublicRouter {
 
     router.get(
       "/v1/public/health",
-      promisifyHandler(async (req, res) => {
-        res.status(200).end();
-      }),
+      new ExpressJsonRuntime(
+        "/v1/public/health",
+        new Processor(async ({ correlationService }, body) => {
+          return {
+            traceId: correlationService.getTraceId(),
+          };
+        }),
+      ).handler,
     );
 
     return router;

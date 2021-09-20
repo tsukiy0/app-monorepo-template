@@ -1,7 +1,10 @@
 module.exports = {
   poweredByHeader: false,
-  trailintSlash: true,
+  trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  experimental: {
+    externalDir: true
   },
 };
