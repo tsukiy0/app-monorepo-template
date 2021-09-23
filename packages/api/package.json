@@ -29,8 +29,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "typecheck": "tsc --noEmit",
-    "prebuild:publish": "yarn clean",
-    "build:publish": "webpack",
+    "prebuild": "yarn clean",
+    "build": "webpack",
     "start": "ts-node -r tsconfig-paths/register src/local.ts"
   }
 }

@@ -6,8 +6,8 @@
     "clean": "rimraf .next out",
     "dev": "next dev",
     "typecheck": "tsc --noEmit",
-    "prebuild:publish": "yarn clean",
-    "build:publish": "next build && next export",
+    "prebuild": "yarn clean",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {

@@ -8,9 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: build
+      - name: dev_build
         env:
-          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
           AWS_ACCESS_KEY_ID: ${{ secrets.DEV_AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-1
@@ -18,15 +17,9 @@ jobs:
           docker-compose -f tasks/ci/docker-compose.yml build build
           docker-compose -f tasks/ci/docker-compose.yml run build
           docker-compose -f tasks/ci/docker-compose.yml down
-      - name: dev_publish
-        run: |
-          docker-compose -f tasks/ci/docker-compose.yml build publish
-          docker-compose -f tasks/ci/docker-compose.yml run publish
-          docker-compose -f tasks/ci/docker-compose.yml down
       - name: dev_deploy
         env:
           Environment: dev
-          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
           AWS_ACCESS_KEY_ID: ${{ secrets.DEV_AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-1
@@ -34,7 +27,7 @@ jobs:
           docker-compose -f tasks/ci/docker-compose.yml build deploy
           docker-compose -f tasks/ci/docker-compose.yml run deploy
           docker-compose -f tasks/ci/docker-compose.yml down
-      - name: integration
+      - name: dev_integration
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.DEV_AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
@@ -43,19 +36,31 @@ jobs:
           docker-compose -f tasks/ci/docker-compose.yml build integration
           docker-compose -f tasks/ci/docker-compose.yml run integration
           docker-compose -f tasks/ci/docker-compose.yml down
-      - name: prod_publish
+      - name: prod_build
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-1
         run: |
-          docker-compose -f tasks/ci/docker-compose.yml build publish
-          docker-compose -f tasks/ci/docker-compose.yml run publish
+          docker-compose -f tasks/ci/docker-compose.yml build build
+          docker-compose -f tasks/ci/docker-compose.yml run build
           docker-compose -f tasks/ci/docker-compose.yml down
       - name: prod_deploy
         env:
           Environment: prod
-          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
           AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-1
         run: |
           docker-compose -f tasks/ci/docker-compose.yml build deploy
           docker-compose -f tasks/ci/docker-compose.yml run deploy
+          docker-compose -f tasks/ci/docker-compose.yml down
+      - name: prod_integration
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.DEV_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-1
+        run: |
+          docker-compose -f tasks/ci/docker-compose.yml build integration
+          docker-compose -f tasks/ci/docker-compose.yml run integration
           docker-compose -f tasks/ci/docker-compose.yml down

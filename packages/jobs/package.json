@@ -22,8 +22,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "typecheck": "tsc --noEmit",
-    "prebuild:publish": "yarn clean",
-    "build:publish": "parallel-webpack -p=2",
+    "prebuild": "yarn clean",
+    "build": "parallel-webpack -p=2",
     "start": "ts-node -r tsconfig-paths/register src/TestJob/index.ts"
   }
 }
