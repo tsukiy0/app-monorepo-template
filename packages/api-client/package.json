@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit",
     "build": "tsc -p tsconfig.build.json",
     "test": "jest --passWithNoTests",
-    "test:integration": "jest --config jest.config.integration.js",
+    "test:integration": "jest --config jest.config.integration.js --passWithNoTests",
     "test:integration:local": "jest --config jest.config.integration.js -t ApiClient"
   },
   "dependencies": {
