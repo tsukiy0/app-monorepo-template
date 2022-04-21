@@ -10,6 +10,7 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
+    "@faker-js/faker": "^6.1.2",
     "runtypes": "^6.5.1"
   },
   "devDependencies": {
