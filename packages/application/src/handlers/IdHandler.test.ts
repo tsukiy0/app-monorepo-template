@@ -18,9 +18,11 @@ describe("IdHandler", () => {
   });
 
   it("get id from repository", async () => {
-    const actual = sut.handle({ id: IdExt.rand() });
+    const actual = await sut.handle({ id: IdExt.rand() });
 
     expect(idRepository.get).toHaveBeenCalled();
-    expect(actual).toEqual(id);
+    expect(actual).toEqual({
+      id
+    });
   });
 });
