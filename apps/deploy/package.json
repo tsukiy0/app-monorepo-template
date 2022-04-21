@@ -1,0 +1,24 @@
+{
+  "name": "@apps/deploy",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "eslint \"./src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "prebuild": "rm -rf dist",
+    "build": "tsc --rootDir src --outDir dist",
+    "predeploy": "cdk bootstrap && cdk deploy --require-approval never External",
+    "deploy": "cdk deploy --require-approval never --all"
+  },
+  "dependencies": {
+    "@packages/domain": "*",
+    "@tsukiy0/aws-cdk-tools": "0.1.1-alpha.07759afcd78989f92fc7a1a55699002856fc4e36.27",
+    "aws-cdk-lib": "2.4.0",
+    "constructs": "10.0.27"
+  },
+  "devDependencies": {
+    "aws-cdk": "2.4.0",
+    "@packages/config": "*",
+    "@packages/tsconfig": "*"
+  }
+}

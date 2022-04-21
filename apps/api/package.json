@@ -5,6 +5,7 @@
   "scripts": {
     "lint": "eslint \"./src/**/*.ts\"",
     "typecheck": "tsc --noEmit",
+    "test": "jest --passWithNoTests",
     "prebuild": "rm -rf dist",
     "build": "webpack",
     "dev": "nodemon --legacy-watch --watch \"src/**\" --ext \"ts,json\" --exec \"ts-node src/dev.ts\""
