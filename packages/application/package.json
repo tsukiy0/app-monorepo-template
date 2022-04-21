@@ -1,5 +1,5 @@
 {
-  "name": "@packages/infrastructure",
+  "name": "@packages/application",
   "private": true,
   "version": "0.0.0",
   "main": "src/index.ts",
@@ -10,7 +10,6 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
-    "@packages/application": "*",
     "@packages/domain": "*"
   },
   "devDependencies": {

@@ -1,1 +1,1 @@
-FROM node:14-bullseye
+FROM tsukiy0/ci-node

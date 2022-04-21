@@ -2,8 +2,6 @@
 
 set -euo pipefail
 
-source $(dirname ${0})/shared
-
-export ALERT_EMAIL=$(get_ssm_parameter /homeworks/ops/email)
-
-# yarn deploy
+pushd apps/deploy
+yarn deploy
+popd

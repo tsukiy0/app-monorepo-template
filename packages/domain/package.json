@@ -1,5 +1,5 @@
 {
-  "name": "@packages/infrastructure",
+  "name": "@packages/domain",
   "private": true,
   "version": "0.0.0",
   "main": "src/index.ts",
@@ -10,8 +10,8 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
-    "@packages/application": "*",
-    "@packages/domain": "*"
+    "@faker-js/faker": "^6.1.2",
+    "runtypes": "^6.5.1"
   },
   "devDependencies": {
     "@packages/config": "*",
