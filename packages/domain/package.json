@@ -1,0 +1,19 @@
+{
+  "name": "domain",
+  "private": true,
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "typings": "src/index.ts",
+  "scripts": {
+    "lint": "eslint \"./src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "test": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "runtypes": "^6.5.1"
+  },
+  "devDependencies": {
+    "config": "*",
+    "tsconfig": "*"
+  }
+}
