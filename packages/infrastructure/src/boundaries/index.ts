@@ -1,1 +1,1 @@
-export const boundaries = "boundaries";
+export * from "./EchoIdRepository";
