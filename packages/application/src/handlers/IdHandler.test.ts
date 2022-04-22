@@ -22,7 +22,7 @@ describe("IdHandler", () => {
 
     expect(idRepository.get).toHaveBeenCalled();
     expect(actual).toEqual({
-      id
+      id,
     });
   });
 });

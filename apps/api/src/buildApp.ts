@@ -13,7 +13,7 @@ export const buildApp = async (): Promise<Express> => {
     promisifyHandler(async (req, res) => {
       const { idHandler } = await buildHandlers();
 
-      const data = await idHandler.handle(IdRequest.check(req.body))
+      const data = await idHandler.handle(IdRequest.check(req.body));
 
       res.status(200).json(data);
     })

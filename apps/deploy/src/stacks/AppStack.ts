@@ -16,7 +16,7 @@ export class AppStack extends Stack {
   ) {
     super(scope, id, props);
 
-    new Api(this, "Api")
-    new Web(this, "Web")
+    new Api(this, "Api");
+    new Web(this, "Web");
   }
 }

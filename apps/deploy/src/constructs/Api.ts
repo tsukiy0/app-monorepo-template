@@ -1,6 +1,6 @@
 import {
   DefaultFunction,
-  DefaultFunctionHttpApi
+  DefaultFunctionHttpApi,
 } from "@tsukiy0/aws-cdk-tools";
 import { Code, Runtime } from "aws-cdk-lib/aws-lambda";
 import { Construct } from "constructs";
@@ -14,7 +14,7 @@ export class Api extends Construct {
       runtime: Runtime.NODEJS_14_X,
       code: Code.fromAsset(path.resolve(__dirname, "../../../api/dist")),
       handler: "index.handler",
-      memorySize: 128
+      memorySize: 128,
     });
 
     new DefaultFunctionHttpApi(this, "Api", {
