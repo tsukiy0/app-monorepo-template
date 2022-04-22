@@ -5,11 +5,9 @@
   "scripts": {
     "lint": "eslint \"./src/**/*.ts\"",
     "typecheck": "tsc --noEmit",
-    "prebuild": "rm -rf dist",
-    "build": "tsc --rootDir src --outDir dist",
     "predeploy": "cdk bootstrap && cdk deploy --require-approval never External",
     "deploy": "cdk deploy --require-approval never --all",
-    "start": "node ./dist/index.js"
+    "start": "node -r esbuild-register ./src/index.ts"
   },
   "dependencies": {
     "@packages/domain": "*",
@@ -18,8 +16,10 @@
     "constructs": "10.0.27"
   },
   "devDependencies": {
-    "aws-cdk": "2.4.0",
     "@packages/config": "*",
-    "@packages/tsconfig": "*"
+    "@packages/tsconfig": "*",
+    "aws-cdk": "2.4.0",
+    "esbuild": "^0.14.38",
+    "esbuild-register": "^3.3.2"
   }
 }
